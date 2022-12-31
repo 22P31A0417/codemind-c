@@ -1,17 +1,14 @@
 #include<stdio.h>
 #include<math.h>
-int main ()
+int main()
 {
-    int a;
-    scanf("%d",&a);
-    int sum=0,sum1=0,sq;
-    for (int i=1;i<=a;i++)
+    int n,r=0,s=0,i,b;
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
     {
-        sq=(i*i);
-        sum=sum+sq;
-        sum1=sum1+i;
+        s=pow(i,2)+s;
+        r=r+i;
+        b=pow(r,2);
     }
-    int p=pow(sum1,2);
-    int d=(p-sum);
-    printf("%d",d);
+    printf("%d",b-s);
 }
