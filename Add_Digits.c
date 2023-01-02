@@ -1,18 +1,18 @@
 #include<stdio.h>
 int main()
 {
-    int n,sum=0,rem;
+    int n,m,s=0,r;
     scanf("%d",&n);
-    while(n>10)
+    while(n/10!=0)
     {
-        sum=0;
+        s=0;
         while(n!=0)
         {
-            rem=n%10;
-            sum+=rem;
-            n/=10;
+            m=n%10;
+            s=s+m;
+            n=n/10;
         }
-        n=sum;
+        n=s;
     }
-    printf("%d",sum);
+    printf("%d",s);
 }
