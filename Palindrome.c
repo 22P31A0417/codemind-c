@@ -1,22 +1,17 @@
 #include<stdio.h>
-int main ()
+int main()
 {
-    int a;
-    scanf("%d",&a);
-    int b=a;
-    int r,s=0;
-    while(b!=0)
+    int n,r,i,s=0;
+    scanf("%d",&n);
+    r=n;
+    while(n!=0)
     {
-        r=b%10;
-        s=s*10+r;
-        b=b/10;
+        s=s*10+n%10;
+        n=n/10;
     }
-    if (s==a)
-{
- printf("True");
-}
-    else
-{
- printf("False");
-}
+    if(r==s)
+    {
+        printf("True");
+    }
+    else printf("False");
 }
