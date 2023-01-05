@@ -13,16 +13,16 @@ int main()
     int l=s*s;
     while(l!=0)
     {
-            int k=l%10;
-            f=f*10+k;
-            l=l/10;
-        }
-        if(m*m==f)
-        {
-            printf("True");
-        }
-        else
-        {
-            printf("False");
-        }
+        int k=l%10;
+        f=f*10+k;
+        l=l/10;
     }
+    if(m*m==f)
+    {
+        printf("True");
+    }
+    else
+    {
+        printf("False");
+    }
+}
